@@ -28,7 +28,7 @@ bool searchGuess(int n, int randomNumber, int& attempts){
 
 
 int main() {
-    cout << "Welcome! This is number guess Game ranging 0 to 1000;\n";
+    cout << "Welcome! This is number guess Game ranging 0 to 500;\n";
     cout << "enter your guess until you reach to right number in less attempts!\n";
 
     int n;
@@ -36,7 +36,7 @@ int main() {
 
     //random number generation 
     int minRange=0;
-    int maxRange=5;
+    int maxRange=500;
    int randomNumber = random(minRange, maxRange);
 
    //function call
@@ -44,7 +44,7 @@ int main() {
     cout << "Enter your guess number : ";
     cin >> n;
    }
-   while(!searchGuess(n, randomNumber, attempts));
+   while( !searchGuess(n, randomNumber, attempts) );
 
     return 0;
 }
